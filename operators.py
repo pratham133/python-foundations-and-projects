@@ -75,3 +75,4 @@ area = length * width
 
 # Show result
 print("Area of rectangle:", area)
+
