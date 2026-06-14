@@ -87,6 +87,36 @@ Programs included:
 * Simple Calculator
 * Area of Rectangle Calculator
 
+### conditions.py
+
+**Topic:** Conditional Statements
+
+Concepts learned:
+
+* `if`
+* `else`
+* `elif`
+* Comparison operators (`>`, `<`, `>=`, `<=`, `==`)
+* Logical decision making
+* `float(input())`
+
+Programs included:
+
+* Voting Eligibility Checker
+* Pass or Fail Program
+* Grade Calculator
+* BMI Calculator
+* Even or Odd Checker
+* Number Checker Challenge
+
+Concepts covered:
+
+* Decision making in Python
+* Multiple conditions
+* Real-world logic building
+* Working with decimal values (`float`)
+
+
 ---
 
 ## Goal 🎯
