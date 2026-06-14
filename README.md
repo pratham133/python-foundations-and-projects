@@ -151,6 +151,43 @@ Concepts covered:
 
 ---
 
+### while_loop.py
+
+**Topic:** While Loops in Python
+
+Concepts learned:
+
+* `while loop`
+* `+=` and `-=`
+* Updating variables inside loops
+* Infinite loops
+* Repeated user input
+
+Programs included:
+
+* Print Numbers using While Loop
+* Countdown Timer
+* User Countdown
+* Password Checker
+* Guess the Number Game
+
+Concepts covered:
+
+* Repeating until a condition becomes false
+* Interactive programs
+* User input inside loops
+* Avoiding infinite loops
+
+### for loop vs while loop
+
+**`for loop`** → Used when the number of repetitions is known (fixed iterations).
+
+**`while loop`** → Used when repetition depends on a condition and continues until it becomes false.
+
+
+
+---
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
