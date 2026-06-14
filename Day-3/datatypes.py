@@ -54,5 +54,3 @@ average = total / 3
 
 # Show result
 print("Average marks:", average)
-
-
