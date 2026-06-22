@@ -296,6 +296,47 @@ Concepts covered:
 ---
 
 
+### Day-11/dictionary.py
+
+### List vs Dictionary
+
+**`list`** → Stores multiple values in an ordered sequence and accesses them using **index numbers**.
+
+**`dictionary`** → Stores data in **key-value pairs** and accesses values using **keys** instead of index numbers.
+
+**Topic:** Dictionaries in Python
+
+Concepts learned:
+
+* Creating dictionaries
+* Accessing dictionary values using keys
+* Printing dictionary values in sentences
+* Updating dictionary values
+* Adding new key-value pairs
+* Removing keys using `del`
+
+Programs included:
+
+* Create a Dictionary
+* Access Dictionary Values
+* Print Sentence from Dictionary
+* Update Dictionary Value
+* Add New Key-Value Pair
+* Remove a Key from Dictionary
+* Student Dictionary Practice
+
+Concepts covered:
+
+* Storing labeled data using key-value pairs
+* Accessing values by key instead of index
+* Updating and expanding dictionaries
+* Removing data from dictionaries
+* Using dictionaries in practical examples
+
+
+---
+
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
