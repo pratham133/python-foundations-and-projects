@@ -221,6 +221,41 @@ Concepts covered:
 ---
 
 
+### Day-9/functions.py
+
+**Topic:** Functions in Python
+
+Concepts learned:
+
+* Creating functions using `def`
+* Calling functions
+* Reusing code with functions
+* Functions with calculations
+* Functions with user input
+* Functions with loops and conditions
+
+Programs included:
+
+* First Function
+* Call Function Multiple Times
+* Function to Add Numbers
+* Function to Find Square
+* Function with User Input
+* Function to Add Two Numbers
+* Function to Print Table
+* Function to Check Number Type
+
+Concepts covered:
+
+* Grouping code into reusable blocks
+* Avoiding repetition
+* Combining functions with loops and conditional statements
+* Writing cleaner and more organized programs
+
+
+---
+
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
