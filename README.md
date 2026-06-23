@@ -337,6 +337,47 @@ Concepts covered:
 ---
 
 
+### tuple.py
+
+### List vs Tuple
+
+**`list`** → Stores multiple values in an ordered collection and can be **modified** after creation.
+
+**`tuple`** → Stores multiple values in an ordered collection but is generally used for **fixed / unchanging data**.
+
+**Topic:** Tuples in Python
+
+Concepts learned:
+
+* Creating tuples
+* Accessing tuple items using index
+* Finding tuple length with `len()`
+* Counting values using `count()`
+* Finding the index of a value using `index()`
+* Understanding the difference between list and tuple
+
+Programs included:
+
+* Create a Tuple
+* Access Tuple Items
+* Tuple Length
+* Count Value in Tuple
+* Find Index in Tuple
+* List vs Tuple
+* Tuple Practice
+
+Concepts covered:
+
+* Tuples as ordered collections
+* Accessing tuple items by index
+* Counting and searching values in tuples
+* Using tuples for fixed data
+* Comparing tuples with lists
+
+
+---
+
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
