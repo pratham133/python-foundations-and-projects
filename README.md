@@ -1,4 +1,4 @@
-# Python Foundations and Pr# Python Foundations 🐍
+# Python Foundations 🐍
 
 My Python learning journey for **AI, Data Analytics, and Software Engineering**.
 
