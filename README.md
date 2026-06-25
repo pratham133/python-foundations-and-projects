@@ -638,6 +638,92 @@ This is useful when different errors can be handled with the same message or log
 ---
 
 
+### modules_imports.py
+
+### my_utils.py
+
+### Modules and Imports in Python
+
+Modules help organize Python code into separate files and allow code reuse across programs. Python also provides built-in modules like `math` that contain useful pre-written functions and constants.
+
+**Topic:** Modules and Imports in Python
+
+Concepts learned:
+
+* Importing a built-in module using `import`
+* Using functions and constants from the `math` module
+* Importing specific items using `from module import ...`
+* Creating a custom Python module in a separate file
+* Importing custom functions from another Python file
+* Reusing functions across multiple programs
+* Organizing helper functions into a utility file
+
+Programs included:
+
+* Import math module
+* Use more math functions
+* Import specific things from math
+* Custom module functions (`my_utils.py`)
+* Import from custom module
+* Use more functions from custom module
+* Custom module practice
+
+Concepts covered:
+
+* Difference between built-in modules and custom modules
+* Using `import math` and calling functions like `math.sqrt()`
+* Using `from math import sqrt, pi` to access functions directly
+* Creating reusable helper functions in `my_utils.py`
+* Importing custom functions like `greet()`, `square()`, `add()`, and `make_upper()`
+* Organizing code across multiple files for better structure and reuse
+
+### Difference between `import math` and `from math import sqrt, pi`
+
+* **`import math`**
+
+  * Imports the full module
+  * You must use the module name before functions/constants
+  * Example:
+
+    ```python
+    math.sqrt(25)
+    math.pi
+    ```
+
+* **`from math import sqrt, pi`**
+
+  * Imports only specific items from the module
+  * You can use them directly without `math.`
+  * Example:
+
+    ```python
+    sqrt(25)
+    pi
+    ```
+
+### Built-in module vs custom module
+
+* **Built-in module**
+
+  * Comes with Python
+  * Example: `math`
+
+* **Custom module**
+
+  * A Python file created by you
+  * Example: `my_utils.py`
+
+### Example custom module functions:
+
+* `greet(name)` → returns a greeting
+* `square(number)` → returns the square of a number
+* `add(a, b)` → returns the sum of two numbers
+* `make_upper(text)` → converts text to uppercase
+
+
+---
+
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
