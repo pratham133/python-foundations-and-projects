@@ -1124,6 +1124,205 @@ By completing this lesson, I learned how Python stores shared data using **class
 
 ---
 
+### encapsulation.py
+
+### Encapsulation in Python
+
+Encapsulation is one of the four fundamental principles of Object-Oriented Programming (OOP). It focuses on protecting an object's data by controlling how it is accessed and modified. Instead of allowing direct access to important data, encapsulation encourages interaction through well-defined methods.
+
+**Topic:** Encapsulation in Python
+
+### Concepts Learned
+
+* Understanding Encapsulation
+* Public Attributes
+* Protected Attributes
+* Private Attributes
+* Name Mangling
+* Getter Methods
+* Setter Methods
+* Data Validation using Setter Methods
+
+### Programs Included
+
+* Public Attributes
+* Protected Attributes
+* Private Attributes
+* Getter Methods
+* Setter Methods
+
+### Concepts Covered
+
+* Difference between public, protected, and private attributes
+* Python's convention for protected members
+* Name mangling for private attributes
+* Reading private data using getter methods
+* Updating private data safely using setter methods
+* Protecting object data through controlled access
+
+---
+
+### What is Encapsulation?
+
+Encapsulation is the process of combining data (attributes) and methods (functions) into a single unit (class) while restricting direct access to important data.
+
+Instead of modifying sensitive data directly, objects interact with that data through methods that enforce rules and validation.
+
+---
+
+### Public Attributes
+
+Public attributes can be accessed and modified directly from outside the class.
+
+Example:
+
+```python
+self.name
+self.age
+```
+
+Usage:
+
+```python
+print(student1.name)
+student1.age = 23
+```
+
+Public attributes are suitable for data that does not require special protection.
+
+---
+
+### Protected Attributes
+
+Protected attributes are created using a single underscore (`_`).
+
+Example:
+
+```python
+self._name
+```
+
+A protected attribute is **not truly protected** by Python. Instead, it serves as a convention that indicates the attribute is intended for internal use and should not be accessed directly unless necessary.
+
+Python follows the philosophy:
+
+> "We are all consenting adults here."
+
+meaning that programmers are trusted to respect these conventions.
+
+---
+
+### Private Attributes
+
+Private attributes are created using two underscores (`__`).
+
+Example:
+
+```python
+self.__name
+self.__age
+```
+
+Private attributes cannot be accessed directly using their original names from outside the class.
+
+Instead, Python internally performs **Name Mangling** to reduce accidental access.
+
+---
+
+### Name Mangling
+
+When Python encounters a private attribute such as:
+
+```python
+self.__name
+```
+
+it internally renames it to:
+
+```python
+self._Student__name
+```
+
+This process is known as **Name Mangling**.
+
+Its purpose is not to provide absolute security, but to prevent accidental access and avoid naming conflicts.
+
+---
+
+### Getter Methods
+
+Getter methods provide a controlled way to read private data.
+
+Example:
+
+```python
+def get_name(self):
+    return self.__name
+```
+
+Usage:
+
+```python
+student1.get_name()
+```
+
+Instead of exposing private variables directly, getters allow the class to control how information is returned.
+
+---
+
+### Setter Methods
+
+Setter methods provide a controlled way to modify private data.
+
+Example:
+
+```python
+def set_age(self, new_age):
+    if new_age > 0:
+        self.__age = new_age
+    else:
+        print("Invalid age!")
+```
+
+Usage:
+
+```python
+student1.set_age(23)
+```
+
+Setters allow validation before updating object data, helping maintain a valid object state.
+
+---
+
+### Why Use Encapsulation?
+
+Encapsulation improves software quality by:
+
+* Protecting important data
+* Preventing invalid modifications
+* Providing controlled access to object attributes
+* Making programs easier to maintain
+* Reducing accidental errors
+* Keeping implementation details hidden from users of the class
+
+---
+
+### Best Practices
+
+* Use **public attributes** for general-purpose data.
+* Use **protected attributes** for internal implementation details that should not normally be accessed directly.
+* Use **private attributes** for sensitive data that requires controlled access.
+* Use **getter methods** when data needs to be read safely.
+* Use **setter methods** when data should be validated before modification.
+
+---
+
+### Summary
+
+By completing this lesson, I learned how encapsulation helps protect object data using public, protected, and private attributes. I also understood how Python implements private attributes through **Name Mangling**, and how **getter** and **setter** methods provide safe and controlled access to private data while maintaining data integrity.
+
+---
+
 ## Goal 🎯
 
 Building strong Python fundamentals for:
