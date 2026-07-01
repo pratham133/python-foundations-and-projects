@@ -873,6 +873,254 @@ The object's age remains unchanged because the invalid value is rejected.
 
 This is the first practical introduction to the concept of **Encapsulation**, where an object protects and manages its own data through methods instead of allowing unrestricted modification.
 
+---
+
+### class_variables.py
+
+### Class Variables, Class Methods & Static Methods
+
+In Object-Oriented Programming (OOP), not all data belongs to an individual object. Sometimes, certain information is common to every object created from a class. Python provides **Class Variables**, **Class Methods**, and **Static Methods** to manage shared data and utility functions more effectively.
+
+**Topic:** Class Variables, Class Methods & Static Methods
+
+### Concepts Learned
+
+* Creating and using class variables
+* Difference between instance variables and class variables
+* Accessing class variables using the class and objects
+* Updating class variables
+* Understanding instance variable shadowing
+* Understanding Python's attribute lookup order
+* Creating class methods using `@classmethod`
+* Understanding the purpose of `cls`
+* Creating static methods using `@staticmethod`
+* Choosing between instance methods, class methods, and static methods
+
+### Programs Included
+
+* Creating Class Variables
+* Updating Class Variables
+* Instance Variable Shadows Class Variable
+* Creating a Class Method
+* Creating a Static Method
+
+### Concepts Covered
+
+* Shared data across all objects
+* Difference between instance variables and class variables
+* Updating shared class data
+* Attribute lookup order in Python
+* Instance variable shadowing
+* Working with class methods
+* Working with static methods
+* Selecting the appropriate method type based on the problem
+
+---
+
+### Class Variables
+
+A **class variable** belongs to the class itself instead of individual objects.
+
+Only **one copy** of a class variable exists, and it is shared by every object created from that class.
+
+Example:
+
+```python
+class Student:
+    college = "ABC University"
+```
+
+Every object created from the `Student` class shares the same `college`.
+
+---
+
+### Instance Variables vs Class Variables
+
+**Instance Variables**
+
+* Belong to individual objects.
+* Every object stores its own copy.
+
+Example:
+
+```python
+self.name
+self.age
+```
+
+Different students can have different names and ages.
+
+---
+
+**Class Variables**
+
+* Belong to the class.
+* Shared among every object.
+
+Example:
+
+```python
+college = "ABC University"
+```
+
+Every student belongs to the same college.
+
+---
+
+### Accessing Class Variables
+
+A class variable can be accessed in two ways.
+
+Using the class (recommended):
+
+```python
+Student.college
+```
+
+Using an object:
+
+```python
+student1.college
+```
+
+Although both work, accessing class variables through the class makes the code more readable and clearly indicates that the data is shared.
+
+---
+
+### Updating Class Variables
+
+Since a class variable belongs to the class, updating it once updates it for every object.
+
+Example:
+
+```python
+Student.college = "OpenAI University"
+```
+
+All objects immediately reflect the new value.
+
+---
+
+### Instance Variable Shadowing
+
+If an object is assigned a variable with the same name as a class variable, Python creates a new **instance variable** instead of modifying the class variable.
+
+Example:
+
+```python
+student1.college = "MIT"
+```
+
+Result:
+
+* `student1.college` → `"MIT"`
+* `student2.college` → `"OpenAI University"`
+* `Student.college` → `"OpenAI University"`
+
+The instance variable hides (or **shadows**) the class variable only for that object.
+
+---
+
+### Python's Attribute Lookup Order
+
+When Python encounters:
+
+```python
+student1.college
+```
+
+It searches in the following order:
+
+1. Check whether the object contains the attribute.
+2. If not found, check the class.
+3. If still not found, raise an `AttributeError`.
+
+Understanding this lookup order explains why class variables and shadowing work the way they do.
+
+---
+
+### Class Methods
+
+A **class method** works with the class itself instead of an object.
+
+It is created using the `@classmethod` decorator.
+
+Example:
+
+```python
+@classmethod
+def show_college(cls):
+    print(cls.college)
+```
+
+The first parameter is `cls`, which represents the current class.
+
+Class methods are useful for working with shared class data.
+
+---
+
+### Static Methods
+
+A **static method** is related to a class but does not require access to either an object or the class itself.
+
+It is created using the `@staticmethod` decorator.
+
+Example:
+
+```python
+@staticmethod
+def is_valid_age(age):
+    return age > 0
+```
+
+Static methods are commonly used for helper or utility functions that logically belong to the class.
+
+---
+
+### Choosing the Right Method
+
+**Instance Method**
+
+* Uses `self`
+* Works with object-specific data
+
+Example:
+
+```python
+student1.display_details()
+```
+
+---
+
+**Class Method**
+
+* Uses `cls`
+* Works with shared class data
+
+Example:
+
+```python
+Student.show_college()
+```
+
+---
+
+**Static Method**
+
+* Uses neither `self` nor `cls`
+* Performs utility operations related to the class
+
+Example:
+
+```python
+Student.is_valid_age(22)
+```
+
+---
+
+### Summary
+
+By completing this lesson, I learned how Python stores shared data using **class variables**, how objects search for attributes, how **instance variable shadowing** works, and how to choose between **instance methods**, **class methods**, and **static methods** based on the problem being solved. These concepts form an important foundation for writing organized and scalable Object-Oriented Python programs.
 
 ---
 
